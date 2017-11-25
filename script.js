@@ -44,7 +44,7 @@ var colors = d3.scale.ordinal()
 
 //A "custom" d3 chord function that automatically sorts the order of the chords in such a manner to reduce overlap	
 var chord = customChordLayout()
-    .padding(.15)
+    .padding(.5) //.15
     .sortChords(d3.descending) //which chord should be shown on top when chords cross. Now the biggest chord is at the bottom
 	.matrix(matrix);
 		
