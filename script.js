@@ -8,7 +8,7 @@ var margin = {left:20, top:20, right:20, bottom:20},
     innerRadius = Math.min(width, height) * .39
     outerRadius = innerRadius * 1.1;
 	
-var Names = ["BA","Changemaker","Coder","Computer scientist","Data analyst","Data scientist",
+var Names = ["BA","Changemaker","Coder","Comp sci","Analyst","Data sci",
 	     "Designer","Developer","Marketing","Other","Programmer","PM","Social media",
 	     "Stats","UX","Artist","Writer"],
 	colors = ["#301E1E", "#083E77", "#342350", "#567235", "#8B161C", "#DF7C00"],
@@ -27,7 +27,7 @@ var matrix = [
 	[1,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1], // Other
 	[1,4,17,5,3,3,1,17,1,0,0,6,0,2,1,1,1], // Programmer
 	[5,6,7,3,1,1,3,8,0,0,6,0,0,2,3,3,1], // Project manager
-	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], // Social media guru
+	[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0], // Social media guru
 	[1,0,2,0,3,3,1,2,0,0,2,2,0,0,1,0,0], // Statistician
 	[2,1,3,1,1,1,6,5,0,0,1,3,0,1,0,0,1], // UX ninja
 	[1,2,1,1,0,0,1,1,0,0,1,3,0,0,0,0,1], // Visual artist
@@ -44,7 +44,7 @@ var colors = d3.scale.ordinal()
 
 //A "custom" d3 chord function that automatically sorts the order of the chords in such a manner to reduce overlap	
 var chord = customChordLayout()
-    .padding(.5) //.15
+    .padding(.15) //.15
     .sortChords(d3.descending) //which chord should be shown on top when chords cross. Now the biggest chord is at the bottom
 	.matrix(matrix);
 		
