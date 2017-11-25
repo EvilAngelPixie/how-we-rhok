@@ -3,14 +3,14 @@
 ////////////////////////////////////////////////////////////
 
 var margin = {left:20, top:20, right:20, bottom:20},
-	width = Math.min(window.innerWidth, 700) - margin.left - margin.right,
+    width = Math.min(window.innerWidth, 700) - margin.left - margin.right,
     height = Math.min(window.innerWidth, 700) - margin.top - margin.bottom,
-    innerRadius = Math.min(width, height) * .39,
+    innerRadius = Math.min(width, height) * .2, //.39
     outerRadius = innerRadius * 1.1;
 	
 var Names = ["BA","Changemaker","Coder","Computer scientist","Data analyst","Data scientist",
 	     "Designer","Developer","Marketing","Other","Programmer","PM","Social media",
-	     "Statistician","UX ninja","Visual artist","Writer"],
+	     "Stats","UX","Artist","Writer"],
 	colors = ["#301E1E", "#083E77", "#342350", "#567235", "#8B161C", "#DF7C00"],
 	opacityDefault = 0.8;
 
