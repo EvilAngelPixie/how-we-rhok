@@ -8,17 +8,30 @@ var margin = {left:20, top:20, right:20, bottom:20},
     innerRadius = Math.min(width, height) * .39,
     outerRadius = innerRadius * 1.1;
 	
-var Names = ["Black Widow","Captain America","Hawkeye","the Hulk","Iron Man","Thor"],
+var Names = ["Business analyst","Changemaker","Coder","Computer scientist","Data analyst","Data scientist",
+	     "Designer","Developer","Marketing expert","Other","Programmer","Project manager","Social media guru",
+	     "Statistician","UX ninja","Visual artist","Writer"],
 	colors = ["#301E1E", "#083E77", "#342350", "#567235", "#8B161C", "#DF7C00"],
 	opacityDefault = 0.8;
 
 var matrix = [
-	[0,4,3,2,5,2], //Black Widow
-	[4,0,3,2,4,3], //Captain America
-	[3,3,0,2,3,3], //Hawkeye
-	[2,2,2,0,3,3], //The Hulk
-	[5,4,3,3,0,2], //Iron Man
-	[2,3,3,3,2,0], //Thor
+	[10,4,3,1,3,1,2,4,1,1,1,5,0,1,2,1,1], // Business analyst
+	[4,10,5,2,0,0,2,5,0,0,4,6,0,0,1,2,1], // Changemaker
+	[3,5,25,6,5,5,3,20,1,1,17,7,0,2,3,1,3], // Coder
+	[1,2,6,7,2,2,1,6,0,0,5,3,0,0,1,1,1], // Computer scientist
+	[3,0,5,2,8,6,1,3,1,1,3,1,0,3,1,0,1], // Data analyst
+	[1,0,5,2,6,7,1,2,0,0,3,1,0,3,1,0,0], // Data scientist
+	[2,2,3,1,1,1,9,5,0,0,1,3,0,1,6,1,2], // Designer
+	[4,5,20,6,3,2,5,33,0,0,17,8,0,2,5,1,2], // Developer
+	[1,0,1,0,1,0,0,0,2,1,1,0,0,0,0,0,1], // Marketing expert
+	[1,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1], // Other
+	[1,4,17,5,3,3,1,17,1,0,21,6,0,2,1,1,1], // Programmer
+	[5,6,7,3,1,1,3,8,0,0,6,12,0,2,3,3,1], // Project manager
+	[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0], // Social media guru
+	[1,0,2,0,3,3,1,2,0,0,2,2,0,4,1,0,0], // Statistician
+	[2,1,3,1,1,1,6,5,0,0,1,3,0,1,8,0,1], // UX ninja
+	[1,2,1,1,0,0,1,1,0,0,1,3,0,0,0,3,1], // Visual artist
+	[1,1,3,1,1,0,2,2,1,1,1,1,0,0,1,1,3], // Writer
 ];
 
 ////////////////////////////////////////////////////////////
@@ -192,7 +205,7 @@ function mouseoverChord(d,i) {
 		content: function() { 
 			return "<p style='font-size: 11px; text-align: center;'><span style='font-weight:900'>" + Names[d.source.index] + 
 				   "</span> and <span style='font-weight:900'>" + Names[d.target.index] + 
-				   "</span> appeared together in <span style='font-weight:900'>" + d.source.value + "</span> movies </p>"; }
+				   "</span> go together in <span style='font-weight:900'>" + d.source.value + "</span> RHoKstars </p>"; }
 	});
 	$(this).popover('show');
 }//mouseoverChord
