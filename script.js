@@ -5,7 +5,7 @@
 var margin = {left:20, top:20, right:20, bottom:20},
     width = Math.min(window.innerWidth, 700) - margin.left - margin.right,
     height = Math.min(window.innerWidth, 700) - margin.top - margin.bottom,
-    innerRadius = Math.min(width, height) * .2, //.39
+    innerRadius = Math.min(width, height) * .39
     outerRadius = innerRadius * 1.1;
 	
 var Names = ["BA","Changemaker","Coder","Computer scientist","Data analyst","Data scientist",
