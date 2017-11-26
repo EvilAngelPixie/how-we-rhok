@@ -8,9 +8,8 @@ var margin = {left:20, top:20, right:20, bottom:20},
     innerRadius = Math.min(width, height) * .39
     outerRadius = innerRadius * 1.1;
 	
-var Names = ["BA","Changemaker","Coder","CS","Data",
-	     "Designer","Marketing","Other","PM","Social",
-	    ,"UX","Artist","Writer"],
+var Names = ["BA","Changemaker","Developer","CompSci","Data",
+	     "Designer","Marketing","Other","PM","Social","UX","Artist","Writer"],
 	colors = ["#301E1E", "#083E77", "#342350", "#567235", "#8B161C", "#DF7C00"],
 	opacityDefault = 0.8;
 
