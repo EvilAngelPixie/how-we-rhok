@@ -9,7 +9,7 @@ var margin = {left:20, top:20, right:20, bottom:20},
     outerRadius = innerRadius * 1.1;
 	
 var Names = ["BA","Changemaker","Developer","CompSci","Data",
-	     "Designer","Social","Project","UX","Writer"],
+	     "Designer","Social","Project Manager","UX","Writer"],
 	colors = ["#301E1E", "#083E77", "#342350", "#567235", "#8B161C", "#DF7C00"],
 	opacityDefault = 0.8;
 
