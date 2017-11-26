@@ -9,24 +9,23 @@ var margin = {left:20, top:20, right:20, bottom:20},
     outerRadius = innerRadius * 1.1;
 	
 var Names = ["BA","Changemaker","Developer","CompSci","Data",
-	     "Designer","Marketing","Other","PM","Social","UX","Artist","Writer"],
+	     "Designer","Marketer","Other","Project","Social","UX","Writer"],
 	colors = ["#301E1E", "#083E77", "#342350", "#567235", "#8B161C", "#DF7C00"],
 	opacityDefault = 0.8;
 
 var matrix = [
-	[0,4,8,1,5,2,1,1,5,0,2,1,1], // BA
-	[4,0,14,2,0,2,0,0,6,0,1,2,1], // Changemaker
-	[8,14,0,17,27,9,2,1,21,0,9,3,4], // Coder
-	[1,2,17,0,4,1,0,0,3,0,1,1,1], // CS
-	[5,0,27,4,0,3,1,1,4,0,3,0,1], // Data
-	[2,2,9,1,3,0,0,0,3,0,6,1,2], // Designer
-	[1,0,2,0,1,0,0,1,0,0,0,0,1], // Marketing expert
-	[1,0,1,0,1,0,1,0,0,0,0,0,1], // Other
-	[5,6,21,3,4,3,0,0,0,0,3,3,1], // Project manager
-	[0,0,0,0,0,0,0,0,0,1,0,0,0], // Social media guru
-	[2,1,9,1,3,6,0,0,3,0,8,0,1], // UX ninja
-	[1,2,3,1,0,1,0,0,3,0,0,0,1], // Artist
-	[1,1,4,1,1,2,1,1,1,0,1,1,0], // Writer
+	[10,4,8,1,5,3,1,1,5,0,2,1], // Business analyst
+	[4,0,14,2,0,4,0,0,6,0,1,1], // Changemaker
+	[8,14,0,17,27,12,2,1,21,0,9,4], // Coder
+	[1,2,17,7,4,2,0,0,3,0,1,1], // Computer scientist
+	[5,0,27,4,0,3,1,1,4,0,3,1], // Data
+	[3,4,12,2,3,1,0,0,6,0,6,3], // Designer
+	[1,0,2,0,1,0,2,1,0,0,0,1], // Marketing expert
+	[1,0,1,0,1,0,1,1,0,0,0,1], // Other
+	[5,6,21,3,4,6,0,0,12,0,3,1], // Project manager
+	[0,0,0,0,0,0,0,0,0,1,0,0], // Social media guru
+	[2,1,9,1,3,6,0,0,3,0,8,1], // UX ninja
+	[1,1,4,1,1,3,1,1,1,0,1,3], // Writer
 ];
 
 ////////////////////////////////////////////////////////////
